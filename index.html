@@ -1,138 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Kazi Athar's Portfolio Site</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script src="https://kit.fontawesome.com/b76ee87640.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kazi Athar's Portfolio Site</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script src="https://kit.fontawesome.com/b76ee87640.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html">Kazi Athar</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--welcome section-->
+    <div class="section">
       <div class="container">
-       <a href="#">Kazi Athar</a>
-        <nav>
-          <ul>
-           <li><a href="index.html">Work</a></li>
-           <li><a href="about.html">About</a></li>
-           <li><a href="#contact">Contact</a></li>
-          </ul>
-       </nav>
+        <h1><span>Hi there!</span> My name is Kazi.<span>A UI/UX Designer with frontend development skills based in Helsinki, Finland.</span></h1>
+      </div><!-- ending of section that holds my hero text-->
+    </div>
+    <!--ending of section that contains all the info-->
+    <!--end of the welcome section-->
+    <!--work section-->
+    <div class="section">
+      <!--start the whole work section-->
+      <div class="container">
+        <!--section that contains the two projects-->
+        <h2>My Work</h2>
+        <div class="row">
+          <!--open row that contains the first project-->
+          <div class="column">
+            <!--open first column for image-->
+            <picture>
+              <source srcset="img/hopeful/banner-mobile.png" media="(max-width:767px)">
+              <img src="img/hopeful/banner-desktop.png" alt="Hopeful">
+            </picture>
+          </div>
+          <!--end first column for image-->
+          <div class="column">
+            <!--open second column for text-->
+            <h3>Hopeful</h3>
+            <p>Hopeful is a responsive website for people suffering from mental health issues. It enables people to connect with therapists online at a time of their convenience.</p>
+            <a href="hopeful.html">View project</a>
+          </div>
+          <!--end second column for text-->
         </div>
-    </header>
+        <!--end row that contains the first project-->
+        <div class="row">
+          <!--open row that contains the second project-->
+          <div class="column">
+            <!--open first column for image-->
+            <picture>
+              <source srcset="img/zecore/banner-mobile.png" media="(max-width:767px)">
+              <img src="img/zecore/banner-desktop.png" alt="Zecore">
+            </picture>
+          </div>
+          <!--end first column for image-->
+          <div class="column">
+            <!--open second column for text-->
+            <h3>Zecore</h3>
+            <p>Zecore is an online store that incorporates the principles of sustainability. It displays a variety of products and informs users about the importance of sustainable living. </p>
+            <a href="#">View project</a>
+          </div>
+          <!--end second column for text-->
+        </div>
+        <!--end row that contains the second project-->
+      </div>
+      <!--end section that contains the two projects-->
+    </div>
+    <!--end the whole work section-->
+  </main>
 
-    <main>
+  <footer id="contact">
+    <div class="section">
+      <!--open section for footer-->
+      <h2>Let's talk!</h2>
+      <p>If you happen to like my work and want to get in touch, I would love to be of assistance to you!
+        Call me <a href="tel:+358449991122">+358449991122</a> or you could also reach out to me via Skype
+        <a href="skype:kaziathar">kaziathar</a>
+      </p>
+      <div class="container">
+        <!--open email section-->
+        <a href="mailto:kaziathardesigns@gmail.com">Email me</a>
+      </div>
+      <!--end email section-->
+      <div class="container">
+        <!--open social media section-->
+        <ul>
+          <li><a href="https://www.linkedin.com/in/kazidesigns/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a></li>
 
-
-      <!--welcome section-->
-      <div class="section">
-        <div class="container">
-          <h1><span>Hi there!</span> My name is Kazi.<span>A UI/UX Designer with frontend development skills based in Helsinki, Finland.</span></h1>
-
-        </div><!-- ending of section that holds my hero text-->
-
-      </div><!--ending of section that contains all the info-->
-
-      <!--end of the welcome section-->
-
-     <!--work section-->
-
-      <div class="section"><!--start the whole work section-->
-
-        <div class="container"><!--section that contains the two projects-->
-
-            <h2>My Work</h2>
-
-          <div class="row"><!--open row that contains the first project-->
-
-            <div class="column"><!--open first column for image-->
-
-             <picture>
-                <source srcset="img/hopeful/banner-mobile.png" media="(max-width:767px)">
-                <img src="img/hopeful/banner-desktop.png" alt="Hopeful">
-              </picture>
-
-            </div><!--end first column for image-->
-
-            <div class="column"><!--open second column for text-->
-              <h3>Hopeful</h3>
-              <p>Hopeful is a responsive website for people suffering from mental health issues. It enables people to connect with therapists online at a time of their convenience.</p>
-              <a href="#">View project</a>
-            </div><!--end second column for text-->
-
-          </div><!--end row that contains the first project-->
-
-          <div class="row"><!--open row that contains the second project-->
-
-            <div class="column"><!--open first column for image-->
-             <picture>
-                <source srcset="img/zecore/banner-mobile.png" media="(max-width:767px)">
-                <img src="img/zecore/banner-desktop.png" alt="Zecore">
-              </picture>
-            </div><!--end first column for image-->
-
-            <div class="column"><!--open second column for text-->
-              <h3>Zecore</h3>
-              <p>Zecore is an online store that incorporates the principles of sustainability. It displays a variety of products and informs users about the importance of sustainable living. </p>
-              <a href="#">View project</a>
-            </div><!--end second column for text-->
-
-          </div><!--end row that contains the second project-->
-
-
-        </div><!--end section that contains the two projects-->
-
-      </div><!--end the whole work section-->
-
-
-    </main>
-
-    <footer id="contact">
-     <div class="container"> <!--open section for footer-->
-       <h2>Let's talk!</h2>
-        <p>If you happen to like my work and want to get in touch, I would love to be of assistance to you!
-           Call me <a href="tel:+358449991122">+358449991122</a> or you could also reach out to me via Skype
-           <a href="skype:kaziathar">kaziathar</a>
-
-        </p>
-
-        <div class="email container"><!--open email section-->
-          <a href="mailto:kaziathardesigns@gmail.com">Email me</a>
-        </div><!--end email section-->
-
-        <div class="social media section"><!--open social media section-->
-
-          <ul>
-           <li><a href="https://www.linkedin.com/in/kazidesigns/" target="_blank">
-             <i class="fab fa-linkedin-in"></i>
-             </a></li>
-
-           <li><a href="https://www.facebook.com/wahaj.kazi.370" target="_blank">
-             <i class="fab fa-facebook-f"></i>
-           </a></li>
-         </ul>
-
-
-        </div> <!--end social media section-->
-
-       <div class="copyright"> <!--open opyright section-->
-
-         <a href="">
-           <img src="https://via.placeholder.com/80">
-         </a>
-
+          <li><a href="https://www.facebook.com/wahaj.kazi.370" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+        </ul>
+      </div>
+      <!--end social media section-->
+      <div class="container">
+        <!--open opyright section-->
+        <a href="">
+          <img src="https://via.placeholder.com/80">
+        </a>
         <p>Copyright Kazi Athar 2020</p>
-
-      </div><!--end of copyright-->
-
-      </div> <!--end section for footer-->
-
-    </footer>
-
-  </body>
+     </div>
+      <!--end of copyright-->
+    </div>
+    <!--end section for footer-->
+  </footer>
+</body>
 </html>
