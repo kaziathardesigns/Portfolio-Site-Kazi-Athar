@@ -38,9 +38,9 @@ a {
   text-decoration: none; /* No underlying */
 }
 a:visited {
-   color: #FB7F64;/* visited link */
+   color: #0091FF;/* visited link */
 }
-a:hover
+a:hover,
 a:focus {
   color: #046BE0;
   text-decoration: underline; /*underlining when hovering over a link */
@@ -48,15 +48,29 @@ a:focus {
 a:active {
   color: #046BE0;/* active link */
 }
+nav a.active{
+  color: #0091FF;
+  font-weight: 1000;
+}
+.button.contact{
+  background-color: transparent;
+  color: #046BE0 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+.button.contact.hover{
+  background-color: #046BE0
+  color: #ffffff !important;
+}
 .button{
   display: inline-block;
-  background-color: #FFF35F;
+  background-color: #046BE0;
   color: #ffffff !important;/* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /*width of the border, type, color */
-  transition 0.2s opacity;
+  transition: 0.2s opacity;
 }
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
