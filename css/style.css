@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body  {
 /*
 Colors used:
@@ -56,7 +59,7 @@ nav a.active{
   background-color: transparent;
   color: #046BE0 !important;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #046BE0;
 }
 .button.contact.hover{
   background-color: #046BE0
@@ -79,9 +82,28 @@ nav a.active{
 .button:active {
 
 }
-header{
+header {
   background-color: #EAF1FF;
   padding: 10px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
+}
+selector {
+  margin: 0 auto; /* no spacing to top and bottom and auto spacing to left and right */
+  position: relative;
+  float: right;
+  width: 1200px 80%;
+}
+/* layout styling */
+.container{
+    padding: 0 25px;
+}
+.row{
+  margin: 25px 0;/* 25px top and bottom but 0 left to right */
+}
+#work .row{
+  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+}
+#hero h1{
+  text-align: center; /* centers text */
 }
