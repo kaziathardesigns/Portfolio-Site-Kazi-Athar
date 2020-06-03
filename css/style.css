@@ -7,7 +7,7 @@ Colors used:
 Primary Color (Blue):#0091FF;
 Secondary Color (Charcoal):#434343;
 */
-background-color: #F7F8FA;
+background-color: #FFFFFF;
 font-family: 'Poppins', sans-serif;
 font-size: 16px;
 font-weight: 300;
@@ -84,9 +84,16 @@ nav a.active{
 }
 header {
   background-color: #EAF1FF;
-  padding: 10px 0;
-  margin: 10px;
+  padding: 20px 0;
+  margin: 0px 0;
   border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
+  -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
+  box-shadow:0px 6px 15px 0px rgba(50, 50, 50, 0.55);
+  position: fixed;
+  display: inline-block;
+  width: 100%;
 }
 selector {
   margin: 0 auto; /* no spacing to top and bottom and auto spacing to left and right */
@@ -110,4 +117,48 @@ selector {
 .logo {
   max-width: 250px;
   text-align: center;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul >li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6b6b6b;
+}
+nav > ul > li > a:hover {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+nav > ul > li > a:active {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav {
+  display: inline-block;
+  width: 100%;
+}
+#hero {
+  background-color: #EAF1FF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+main {
+  padding-top: 140px;
 }
