@@ -18,19 +18,19 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 1.75em;
+  font-weight: 500;
 }
 h2 {
-  font-size: 2.25em;
-  font-weight:700;
+  font-size: 1.25em;
+  font-weight:500;
 }
 h3 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 h4 {
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 img {
@@ -83,7 +83,7 @@ nav a.active{
 
 }
 header {
-  background-color: #EAF1FF;
+  background-color: #F9F9F9;
   padding: 20px 0;
   margin: 0px 0;
   border-bottom: 3px solid #4a4a4a;
@@ -94,12 +94,6 @@ header {
   position: fixed;
   display: inline-block;
   width: 100%;
-}
-selector {
-  margin: 0 auto; /* no spacing to top and bottom and auto spacing to left and right */
-  position: relative;
-  float: right;
-  width: 1200px 80%;
 }
 /* layout styling */
 .container{
@@ -126,25 +120,25 @@ nav > ul >li {
   display: inline-block;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 nav > ul > li > a:visited {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #6b6b6b;
 }
 nav > ul > li > a:hover {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #1a1a1a;
 }
 nav > ul > li > a:active {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
@@ -154,11 +148,46 @@ nav {
   width: 100%;
 }
 #hero {
-  background-color: #EAF1FF;
+  background-color: #F9F9F9;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 main {
   padding-top: 140px;
+}
+#footer > ul {
+  list-style-type: none;
+  padding: 0;
+}
+#footer ul {
+  display: inline-block;
+}
+/* ================================
+Medium devices (640px and larger)
+=================================== */
+@media only screen and (min-width:640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  main {
+    padding-top: 99px;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
