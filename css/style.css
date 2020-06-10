@@ -61,9 +61,10 @@ nav a.active{
   text-transform: uppercase;
   border: 2px solid #046BE0;
 }
-.button.contact.hover{
-  background-color: #046BE0;
+.button.contact:hover{
   color: #ffffff !important;
+  background-color: #046BE0;
+  color: white;
 }
 .button{
   display: inline-block;
@@ -71,13 +72,13 @@ nav a.active{
   color: #ffffff !important;/* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /*width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: white;
 }
 .button:active {
 
@@ -175,6 +176,33 @@ footer {
   background-color: #F9F9F9;
   padding: 20px;
 }
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+.sun{
+  animation: 4s color-change infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate (0,50px);}
+  to {transform: translate (200px, 50px);}
+}
+.cloud-front{
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate (446px, 48px);}
+  to {transform: translate (100px, 48px);}
+}
+.cloud-back{
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 /* ================================
 Medium devices (640px and larger)
 =================================== */
@@ -183,7 +211,6 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0;
   }
-
   nav {
     width: auto;
     float: right;
