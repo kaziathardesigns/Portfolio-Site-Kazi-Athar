@@ -4,11 +4,12 @@
 body  {
 /*
 Colors used:
-Primary Color (Blue):#0091FF;
-Secondary Color (Charcoal):#434343;
+Primary Color (Crimson):#F67762;
+Secondary Color (Teal):#00CD91;
+Background Color (Purple): #2F2F43;
 */
 background-color: #FFFFFF;
-font-family: 'Poppins', sans-serif;
+font-family: 'Avenir Next', sans-serif;
 font-size: 16px;
 font-weight: 300;
 line-height: 1.6;
@@ -18,76 +19,77 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 1.75em;
-  font-weight: 500;
+  font-size: 1.50em;
+  font-weight: 400;
 }
 h2 {
-  font-size: 1.25em;
-  font-weight:500;
+  font-size: 1.75em;
+  font-weight:700;
 }
 h3 {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 600;
 }
 h4 {
   font-size: 1.25em;
+  font-weight: 500;
+}
+p {
+  font-size: 1.25 em;
   font-weight: 400;
 }
 img {
   width: 100%;
 }
 a {
-  color: #0091FF;
+  color: #FFFFFF;
   text-decoration: none; /* No underlying */
 }
 a:visited {
-   color: #0091FF;/* visited link */
+   color: #FFFFFF;/* visited link */
 }
-a:hover,
-a:focus {
-  color: #046BE0;
-  text-decoration: underline; /*underlining when hovering over a link */
+a:hover {
+  color: #FFFFFF;
+  text-decoration: underline #00CD91 3px; /*underlining when hovering over a link */
 }
 a:active {
-  color: #046BE0;/* active link */
+  color: #FFFFFF;/* active link */
+  text-decoration: underline #00CD91 3px;
 }
 nav a.active{
-  color: #0091FF;
-  font-weight: 1000;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: underline #00CD91 3px;
 }
 .button.contact{
   background-color: transparent;
-  color: #046BE0 !important;
-  text-transform: uppercase;
-  border: 2px solid #046BE0;
+  color: #ffffff !important;
+  border: 2px solid #F67762;
 }
 .button.contact:hover{
   color: #ffffff !important;
-  background-color: #046BE0;
-  color: white;
+  background-color: #F67762;
+  opacity: 1;
 }
 .button{
   display: inline-block;
-  background-color: #046BE0;
-  color: #ffffff !important;/* needed to override the default link color */
+  border: 2px solid #F67762;
+  color: #424242 !important;/* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   transition: 0.2s opacity;
+  border-radius: 40px;
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  color: white;
-}
-.button:active {
-
+  background-color: #F67762;
+  color: white !important;
 }
 header {
-  background-color: #F9F9F9;
-  padding: 20px 0;
-  margin: 0px 0;
-  border-bottom: 3px solid #4a4a4a;
+  background-color: #2F2F43;
+  padding: 0px 0;
+  margin: 0 0;
   text-align: center;
   -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
@@ -108,11 +110,14 @@ header {
 }
 #hero h1{
   text-align: center; /* centers text */
+  color: #FFFFFF;
+  margin: 0;
 }
 .logo {
   max-width: 250px;
   text-align: center;
   font-size: 20px;
+  font-weight: 400;
 }
 nav > ul {
   list-style-type: none;
@@ -123,35 +128,34 @@ nav > ul >li {
 }
 nav > ul > li > a {
   padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+  font-weight: 400;
+  color: #FFFFFF;
 }
 nav > ul > li > a:visited {
   padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #6b6b6b;
+  text-transform: lower;
+  font-weight: 400;
+  color: #FFFFFF;
 }
 nav > ul > li > a:hover {
   padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: 400;
+  color: #FFFFFF;
 }
 nav > ul > li > a:active {
   padding: 0 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: underline #00CD91 3px;
 }
 nav {
   display: inline-block;
   width: 100%;
 }
 #hero {
-  background-color: #F9F9F9;
-  padding: 20px 0;
+  background-color: #2F2F43;
+  padding: 40px 0;
+  margin: 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -160,7 +164,7 @@ nav {
   display: block;
 }
 main {
-  padding-top: 140px;
+  padding-top: 72px;
 }
 .social-media ul{
   list-style-type: none;
@@ -173,8 +177,9 @@ main {
 }
 footer {
   text-align: center;
-  background-color: #F9F9F9;
+  background-color: #2F2F43;
   padding: 20px;
+  color: white;
 }
 .berlin-illustration {
   width: 100%;
@@ -203,6 +208,7 @@ footer {
 .cloud-back{
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 /* ================================
 Medium devices (640px and larger)
 =================================== */
@@ -217,7 +223,7 @@ Medium devices (640px and larger)
     margin-top: 5px;
   }
   main {
-    padding-top: 99px;
+    padding-top: 72px;
   }
   .container{
     max-width: 1200px;
