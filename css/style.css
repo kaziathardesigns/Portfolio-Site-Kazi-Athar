@@ -69,7 +69,6 @@ nav a.active{
 .button.contact:hover{
   color: #ffffff !important;
   background-color: #F67762;
-  opacity: 1;
 }
 .button{
   display: inline-block;
@@ -80,11 +79,25 @@ nav a.active{
   transition: 0.2s opacity;
   border-radius: 40px;
 }
-
 .button:hover {
   text-decoration: none;
   background-color: #F67762;
   color: white !important;
+}
+.button-hero{
+  display: inline-block;
+  margin-top: 25px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #F67762;
+  border-radius: 40px;
+  padding: 10px;
+  font-weight: 400;
+}
+.button-hero:hover{
+  color: #ffffff;
+  background-color: #F67762;
+  text-decoration: none;
 }
 header {
   background-color: #2F2F43;
@@ -103,15 +116,14 @@ header {
     padding: 0 25px;
 }
 .row{
-  margin: 25px 0;/* 25px top and bottom but 0 left to right */
+  padding: 45px 0;/* 25px top and bottom but 0 left to right */
 }
 #work .row{
-  padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 45px;
 }
 #hero h1{
   text-align: center; /* centers text */
   color: #FFFFFF;
-  margin: 0;
 }
 .logo {
   max-width: 250px;
@@ -154,11 +166,11 @@ nav {
 }
 #hero {
   background-color: #2F2F43;
-  padding: 40px 0;
   margin: 0;
   display: inline-block;
   width: 100%;
   text-align: center;
+  padding: 75px 0;
 }
 #hero span{
   display: block;
@@ -237,12 +249,14 @@ Medium devices (640px and larger)
   nav ul{
     margin: 0;
   }
-  .col-md-6{
-    width: 50%;
+  .col-lg-5{
+    width: 100%;
+  }
+  .col-lg-7 {
+    width: 100%;
   }
   [class*="col-"]{
-    float: left;
-    padding: 10px;
+    padding: 0 75px;
   }
   .row::after{
     content: "";
@@ -252,16 +266,19 @@ Medium devices (640px and larger)
   #about-page h3 {
     margin-top: 0;
   }
+  #hero {
+      padding: 140px 0;
+  }
+  #work h2{
+    margin-left: 100px;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .col-lg-7{
-    width: 60%;
-  }
-  .col-lg-5 {
-    width: 40%;
+  .col-lg-5{
+    width: 100%;
   }
   .container{
     max-width: 1200px;
