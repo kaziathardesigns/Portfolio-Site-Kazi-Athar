@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body  {
 /*
 Colors used:
@@ -15,84 +16,104 @@ font-weight: 300;
 line-height: 1.6;
 color: #4a4a4a;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 1.50em;
   font-weight: 400;
 }
+
 h2 {
   font-size: 1.75em;
   font-weight:700;
 }
+
 h3 {
   font-size: 1.25em;
   font-weight: 600;
 }
+
 h4 {
   font-size: 1.25em;
   font-weight: 500;
 }
+
 p {
   font-size: 1.25 em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #FFFFFF;
   text-decoration: underline;
 }
+
 a:visited {
-   color: #FFFFFF;/* visited link */
+   color: #FFFFFF;
 }
+
 a:hover, a:focus {
   color: #00CD91;
   text-decoration: none;
 }
+
 a:active {
-  color: #FFFFFF;/* active link */
+  color: #FFFFFF;
   text-decoration: none;
 }
+
 nav {
   display: inline-block;
   width: 100%;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
 }
+
 nav > ul >li {
   display: inline-block;
 }
+
 nav > ul > li > a {
-  padding: 0 0px;
   margin: 0 15px;
   font-weight: 400;
   text-decoration: none;
 }
+
 nav > ul > li > a:hover{
    color: #ffffff;
    border-bottom: 3px solid #00CD91;
 }
+
 nav a.active{
     color: #ffffff;
     border-bottom: 3px solid #00CD91;
 }
+
 nav > ul > li > a:active {
      color: #ffffff;
 }
+
 .button.contact{
   background-color: transparent;
   color: #ffffff !important;
   border: 2px solid #F67762;
 }
+
 .button.contact:hover{
   color: #ffffff !important;
   background-color: #F67762;
 }
+
 .button{
   display: inline-block;
   border: 2px solid #F67762;
@@ -102,11 +123,13 @@ nav > ul > li > a:active {
   transition: 0.2s opacity;
   text-decoration: none;
 }
+
 .button:hover {
   text-decoration: none;
   background-color: #F67762;
   color: white !important;
 }
+
 .button-hero{
   display: inline-block;
   margin-top: 25px;
@@ -117,15 +140,17 @@ nav > ul > li > a:active {
   font-weight: 400;
   text-decoration: none;
 }
+
 .button-hero:hover{
   color: #ffffff;
   background-color: #F67762;
   text-decoration: none;
 }
+
 header {
   background-color: #2F2F43;
-  padding: 0px 0;
-  margin: 0 0;
+  padding: 10px 0;
+  margin: 0;
   text-align: center;
   -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
@@ -134,25 +159,30 @@ header {
   display: inline-block;
   width: 100%;
 }
-/* layout styling */
+
 .container{
-    padding: 0 25px;
+    padding: 0 25px 25px 25px;
 }
+
 .row{
-  padding: 45px 0;/* 25px top and bottom but 0 left to right */
+  padding: 0 0 45px;/* 25px top and bottom but 0 left to right */
 }
-#work .row{
-  padding-bottom: 45px;
+
+#work .col-6{
+  margin-bottom: 3em;
 }
+
 #hero h1{
   text-align: center; /* centers text */
   color: #FFFFFF;
   line-height: 1.8;
 }
+
 #hero span.color{
   color: #00CD91;
   display: unset;
 }
+
 .logo {
   max-width: 250px;
   text-align: center;
@@ -169,51 +199,71 @@ header {
   text-align: center;
   padding: 75px 0;
 }
+
 #hero span{
   display: block;
 }
+
 main {
-  padding-top: 72px;
+  padding-top: 120px;
 }
+
 .social-media ul{
   list-style-type: none;
   padding: 0;
   display: inline-block;
 }
+
 .social-media li{
   float: left;
   margin: 10px 20px;
 }
+
+.no-padding-bottom{
+  padding-bottom. 0;
+}
+
+#about-page h1 {
+  padding-top: 75px;
+}
+
 footer {
   text-align: center;
   background-color: #2F2F43;
   padding: 20px;
   color: white;
 }
+
 .berlin-illustration {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
+
 @keyframes color-change {
   0% {fill: #edc655;}
   50% {fill: #fcffad;}
   100% {fill: #f76414;}
 }
+
 .sun{
   animation: 4s color-change infinite alternate linear;
 }
+
 @keyframes cloud-move {
   from {transform: translate (0,50px);}
   to {transform: translate (200px, 50px);}
 }
+
 .cloud-front{
   animation: 30s cloud-move infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
   from {transform: translate (446px, 48px);}
   to {transform: translate (100px, 48px);}
 }
+
 .cloud-back{
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
@@ -221,40 +271,49 @@ footer {
 /* ================================
 Medium devices (640px and larger)
 =================================== */
+
 @media only screen and (min-width:640px) {
   header {
     text-align: unset;
     padding: 20px 0;
   }
+
   nav {
     width: auto;
     float: right;
     margin-top: 5px;
   }
+
   main {
     padding-top: 72px;
   }
+
   .container{
     max-width: 1200px;
     margin: 0 auto;
   }
+
   header .container:after{
     content: "";
     clear: both;
     display: table;
   }
+
   nav ul{
     margin: 0;
   }
+
   [class*="col-"]{
-    padding: 0 75px;
+    padding: 15px 40px;
     float: left;
   }
+
   .row::after{
     content: "";
     clear: both;
     display: table;
   }
+
   #about-page h3 {
     margin-top: 0;
   }
@@ -262,17 +321,24 @@ Medium devices (640px and larger)
   #hero {
       padding: 140px 0;
   }
+
   #work h2{
-    margin-left: 78px;
+    margin-left: 40px;
   }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
+
+#work {
+  padding-top: 60px;
+}
+
 @media only screen and (min-width: 1024px) {
   .col-6{
     width: 50%;
   }
+
   .container{
     max-width: 1200px;
     margin-left: 78px auto;
@@ -283,10 +349,12 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
+
 @media only screen and (min-width: 1440px) {
   .container{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
 }
