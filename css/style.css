@@ -8,6 +8,7 @@ Colors used:
 Primary Color (Crimson):#F67762;
 Secondary Color (Teal):#00CD91;
 Background Color (Purple): #2F2F43;
+Background Color (Grey): #F7F8FA;
 */
 background-color: #FFFFFF;
 font-family: 'Avenir Next', sans-serif;
@@ -42,12 +43,17 @@ h4 {
 }
 
 p {
-  font-size: 1.25 em;
-  font-weight: 400;
+  font-size: 1.15em;
+  font-weight: 300;
 }
 
 img {
   width: 100%;
+}
+.img-position{
+  width:100%;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 a {
@@ -161,11 +167,11 @@ header {
 }
 
 .container{
-    padding: 0 25px 25px 25px;
+    padding: 0 25px;
 }
 
 .row{
-  padding: 0 0 45px;/* 25px top and bottom but 0 left to right */
+  padding: 0 0 45px;
 }
 
 #work .col-6{
@@ -205,7 +211,7 @@ header {
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 108px;
 }
 
 .social-media ul{
@@ -220,11 +226,11 @@ main {
 }
 
 .no-padding-bottom{
-  padding-bottom. 0;
+  padding-bottom: 0;
 }
 
 #about-page h1 {
-  padding-top: 75px;
+  padding-top: 10px;
 }
 
 footer {
@@ -251,8 +257,8 @@ footer {
 }
 
 @keyframes cloud-move {
-  from {transform: translate (0,50px);}
-  to {transform: translate (200px, 50px);}
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
 }
 
 .cloud-front{
@@ -260,8 +266,8 @@ footer {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate (446px, 48px);}
-  to {transform: translate (100px, 48px);}
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
 }
 
 .cloud-back{
@@ -275,7 +281,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width:640px) {
   header {
     text-align: unset;
-    padding: 20px 0;
+    padding: 20px 25px;
   }
 
   nav {
@@ -325,6 +331,38 @@ Medium devices (640px and larger)
   #work h2{
     margin-left: 40px;
   }
+
+  .relevant-skills{
+    padding-left: 0;
+  }
+
+  .hopeful-text-style p{
+    margin: 2em auto;
+    max-width: 538px;
+    padding: 10px 20px;
+  }
+
+  .hopeful-text-style h2,h3,h4{
+    padding: 0 43px;
+  }
+  .hopeful-text-style ul{
+    padding: 0 60px;
+  }
+
+  .hopeful-text-style p{
+    margin: 2em auto;
+    max-width: 538px;
+    padding: 10px 5px;
+  }
+
+  .about-text-style h1,h2,h3,h4{
+    padding: 40px 0;
+  }
+
+  .about-text-style ul{
+    padding: 0 5px;
+  }
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -339,12 +377,31 @@ Large devices (1024px or larger)
     width: 50%;
   }
 
-  .container{
-    max-width: 1200px;
-    margin-left: 78px auto;
-    margin-right: auto;
+  .intro p{
+    margin: 7em auto;
+    max-width: 538px;
+
   }
 
+  .row-max-width{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hopeful-text-style p{
+    margin: 2em auto;
+    max-width: 850px;
+    padding: 10px 20px;
+  }
+
+  .hopeful-text-style h2,h3,h4{
+    padding: 0 79px;
+  }
+
+  .hopeful-text-style ul{
+    padding: 0 97px;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
