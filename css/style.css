@@ -341,28 +341,6 @@ Medium devices (640px and larger)
     max-width: 538px;
     padding: 10px 20px;
   }
-
-  .hopeful-text-style h2,h3,h4{
-    padding: 0 43px;
-  }
-  .hopeful-text-style ul{
-    padding: 0 60px;
-  }
-
-  .hopeful-text-style p{
-    margin: 2em auto;
-    max-width: 538px;
-    padding: 10px 5px;
-  }
-
-  .about-text-style h1,h2,h3,h4{
-    padding: 40px 0;
-  }
-
-  .about-text-style ul{
-    padding: 0 5px;
-  }
-
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -395,13 +373,6 @@ Large devices (1024px or larger)
     padding: 10px 20px;
   }
 
-  .hopeful-text-style h2,h3,h4{
-    padding: 0 79px;
-  }
-
-  .hopeful-text-style ul{
-    padding: 0 97px;
-  }
 }
 /* ==============================
 X-large devices (1440px or larger)
