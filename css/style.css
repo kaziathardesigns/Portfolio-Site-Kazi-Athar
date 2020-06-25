@@ -373,6 +373,10 @@ Large devices (1024px or larger)
     padding: 10px 20px;
   }
 
+  #about-page col-6 relevant-skills ul{
+    padding: 0 0 0 18px;
+  }
+
 }
 /* ==============================
 X-large devices (1440px or larger)
