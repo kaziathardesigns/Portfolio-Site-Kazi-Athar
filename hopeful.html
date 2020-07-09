@@ -19,388 +19,396 @@
 </head>
 
 
-<body class="hopeful-text-style">
+<body class="hopeful">
   <header>
     <div class="header-container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html" class="logo">Kazi Athar</a>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
   <main>
-    <div class="section">
-      <!--start main section-->
+    <div class="intro white">
       <div class="container">
-        <!--start main container-->
-
-        <div class="intro">
-          <!--start hero image section-->
-          <h1>Hopeful</h1>
-          <picture>
-            <source srcset="img/hopeful/banner-mobile.png" media="(max-width:767px)">
-            <img src="img/hopeful/banner-desktop.png" alt="Hopeful image">
-          </picture>
-          <p>
-            We’ve all been there! Depressed, sad, heartbroken or lonely. Such is life sometimes. However, in every crisis lies an opportunity. An opportunity for growth. An opportunity to learn. An opportunity to forgive and an opportunity to be
-            hopeful.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/mockup-white-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/mockup-white-1200.png" alt="Hopeful mockup">
-          </picture>
-        </div>
-        <!--end hero image section-->
-
-        <div class="grey">
-          <!--start the overview section-->
-          <h2>Overview</h2>
-          <p>
-            Hopeful is a responsive website that helps people suffering from depression, anxiety, sadness, loneliness or any other issue by connecting them to a therapist of their choosing.
-          </p>
-          <h2>Workflow</h2>
-          <picture>
-            <source srcset="img/hopeful/workflow-mobile-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/workflow-desktop-1200.png" alt="Hopeful workflow">
-          </picture>
-        </div>
-        <!--end the overview section-->
-
-        <div class="white">
-          <!--start defining the problem section-->
-          <h2>1. Defining the Problem</h2>
-          <p>
-            The initial part of my workflow is always about defining the problem. This includes possible problems and possible solutions to those problems. I then describe the concept and formulate a problem statement and using all the insights
-            gathered I craft a solution statement.
-          </p>
-          <h2>The Concept</h2>
-          <ul>
-            <li>There aren’t that many platforms out there that connect people suffering from mental health issues to professionals</li>
-            <li>Some of the platforms focus more on meditation than therapy</li>
-            <li>The platforms that do provide mental health support don’t provide any free content to the users</li>
-            <li>Users lose motivation easily since meditation is hard practice</li>
-            <li>People are fearful of being judged by their friends and family if they reach out for help</li>
-          </ul>
-          <h2>Problem Statement</h2>
-          <p>
-            Our users need to find a way to get access to licensed professional help because apps nowadays lack human element to them that doesn’t tackle the problem from the core. We will know this to be true when we see users downloading and
-            sticking
-            to our products using analytics and the number of sessions sold.
-          </p>
-          <h2>Solution Statement</h2>
-          <p>
-            A responsive website that lets people book online sessions with a therapist or a relevant professional of their liking. Users can schedule and pay for their session online. In addition to that, the website will offer free content such as
-            Sleepcasts. These not only provide free content but also facilitate users to sleep better and bring their anxiety levels down.
-          </p>
-          <h2>Competitor Analysis</h2>
-          <p>
-            The two competitors I chose for the analysis were Headspace and Present. Both these apps are meditation based and the insights I gathered from this analysis are as follows.
-          </p>
-          <h3>Key Insights</h3>
-          <ul>
-            <li>Users lack human connection while interacting with digital products</li>
-            <li>Users don’t want to commit to a monthly subscription plan</li>
-            <li>Headspace provides users with free content that engages them</li>
-            <li>Present has a pricey plan at 40€ per month and will not engage users</li>
-            <li>Present uses gamification to retain users</li>
-            <li>Opportunity lies in creating a platform where the users can connect with real psychologists to cope with anxiety</li>
-          </ul>
-          <p>
-            <a href="https://docs.google.com/document/d/1w0f2qAPdp2UrXHJigd9qGex5JUyiimPnugT50Wgd31I/edit?usp=sharing">Link</a> to the full prototype
-          </p>
-        </div>
-        <!--end defining the problem section-->
-
-        <div class="grey">
-          <!--start understanding the user section-->
-          <h2>2. Understanding the User</h2>
-          <p>
-            I started out with preparing a test script and plan for my interviews. I picked out 3 people who have been to therapy or have used a meditation app to interview. The interviews were mostly about people’s motivations, experiences and
-            frustrations with the current platform they are using. Following that I did affinity mapping to put everything into perspective. Here’s a picture to showcase my findings.
-          </p>
-          <h3>Affinity Mapping</h3>
-          <picture>
-            <source srcset="img/hopeful/affinity-mapping-600.jpg" media="(max-width:767px)">
-            <img src="img/hopeful/affinity-mapping-1200.jpg" alt="Affinity mapping">
-          </picture>
-          <h3>Findings</h3>
-          <ul>
-            <li>People are having difficulties with slow processing times using governmental institutions</li>
-            <li>Prices are very high for private institutes</li>
-            <li>Location seems to be a big issue as people don’t want to travel far</li>
-            <li>People have to go through an assessment phase to actually get to talk to a therapist</li>
-            <li>Digital platforms are not primary means of reaching out for help (in Finland)</li>
-            <li>Websites have discoverability issues</li>
-            <li>Free consultation is available in order to get a feel for the therapist</li>
-          </ul>
-          <h3>Way Forward</h3>
-          <p>
-            Based on the insights gathered from the people I interviewed, there is definitely a potential for a digital platform that would facilitate people in consulting a therapist for whatever issue they might encounter. The price seems to be another issue that people take into consideration. If we can offer people simple yet affordable means of getting therapy then from the looks of it, people would gladly use the product.
-          </p>
-          <h2>User Personas</h2>
-          <p>
-            It’s time to introduce the personas, meet Carla and Jodie. They are both at a different stage in their lives which translates into different motivations, goals, frustrations and needs.
-          </p>
-          <div class="row">
-            <!--start row for user personas-->
-            <div class="white">
-              <!--start column for 1st persona-->
-              <picture>
-                <source srcset="img/hopeful/carla-persona-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/carla-persona-1200.png" alt="Carla's persona">
-              </picture>
-            </div>
-            <!--end column for 1st persona-->
-            <div class="grey">
-              <!--start column for 2nd persona-->
-              <picture>
-                <source srcset="img/hopeful/jodie-persona-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/jodie-persona-1200.png" alt="Carla's persona">
-              </picture>
-            </div>
-            <!--end column for 2nd persona-->
-          </div>
-          <!--end row for user personas-->
-          <h2>User Journeys</h2>
-          <p>
-            I designed user journeys based on my findings and observations from the personas. These take us through the entire process of what a user does and feels while interacting with the product.
-          </p>
-          <div class="row">
-            <!--start row for user journeys-->
-            <div class="white">
-              <!--start column for 1st journey-->
-              <picture>
-                <source srcset="img/hopeful/user-journey-carla-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/user-journey-carla-1200.png" alt="Carla's journey">
-              </picture>
-            </div>
-            <!--end column for 1st journey-->
-            <div class="grey">
-              <!--start column for 2nd journey-->
-              <picture>
-                <source srcset="img/hopeful/user-journey-jodie-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/user-journey-jodie-1200.png" alt="Carla's journey">
-              </picture>
-            </div>
-            <!--end column for 2nd journey-->
-          </div>
-          <!--end row for user journeys-->
-          <h2>User Stories and Flows</h2>
-          <p>
-            Following user journeys I made user stories and flows. These were based on the most important aspects on the app, such as;
-          </p>
-          <ul>
-            <li>Booking an appointment with a therapist</li>
-            <li>Listening to a Sleepcast</li>
-          </ul>
-          <div class="row">
-            <!--start row for user stories and flows-->
-            <div class="white">
-              <!--start column for 1st story and flow-->
-              <picture>
-                <source srcset="img/hopeful/user-flow-carla-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/user-flow-carla-1200.png" alt="Carla's story and flow">
-              </picture>
-            </div>
-            <!--end column for 1st story and flow-->
-            <div class="grey">
-              <!--start column for 2nd story and flow-->
-              <picture>
-                <source srcset="img/hopeful/user-flow-jodie-600.png" media="(max-width:767px)">
-                <img src="img/hopeful/user-flow-jodie-1200.png" alt="Jodie's story and flow">
-              </picture>
-            </div>
-            <!--end column for 2nd journey-->
-          </div>
-          <!--end row for user journeys-->
-        </div>
-        <!--end understanding the user-->
-
-        <div class="white">
-          <!--start foundational design section-->
-          <h2>3. Foundational Design</h2>
-          <p>
-            It was time to get my creative juices flowing by designing some low fidelity wireframes. I also decided to create paper prototypes by annotating the wireframes.
-          </p>
-          <h2>Low Fidelity Wireframes</h2>
-          <h3>Booking a session</h3>
-          <p>
-            Here we can how a user might book a session with a therapist using low fidelity wireframes for mobile.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/lofi-mobile-booking-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/lofi-mobile-booking-1200.png" alt="Low fidelity wireframe for booking">
-          </picture>
-          <h3>Listening to a Sleepcast</h3>
-          <p>
-            Users can also listen to Sleepcasts free of charge. It serves as a nice function of utility.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/lofi-mobile-sleepcasts-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/lofi-mobile-sleepcasts-1200.png" alt="Low fidelity wireframe for sleepcasts">
-          </picture>
-          <h2>Mid Fidelity Wireframes</h2>
-          <p>
-            Now it was time to go to my favorite design tool, Sketch, to design mid fidelity wireframes for booking a session with a therapist and listen to sleepcasts.
-          </p>
-          <h3>Booking a Session</h3>
-          <p>
-            Here's the flow for booking a session with a therapist. I used Sketch to lay down the foundation for my final screens.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/midfi-mobile-booking-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/midfi-mobile-booking-1200.png" alt="Mid fidelity wireframe for booking">
-          </picture>
-          <h3>Listening to Sleepcasts</h3>
-          <p>Subsequently, I designed the flow for listening to a Sleepcast as well
-          </p>
-          <picture>
-            <source srcset="img/hopeful/midfi-mobile-sleepcasts-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/midfi-mobile-sleepcasts-1200.png" alt="Mid fidelity wireframe for sleepcasts">
-          </picture>
-        </div>
-        <!--end foundational design section-->
-
-        <div class="grey">
-          <!--start usability testing-->
-          <h2>4.Usability Testing</h2>
-          <p>
-            I figured my wireframes were detailed enough to conduct usability testing. So I booked time slots with 6 different people. The tests were based on the following parameters;
-          </p>
-          <ul>
-            <li>Booking an appointment with a therapist</li>
-            <li>Listening to a Sleepcast</li>
-          </ul>
-          <p>
-            I used unmoderated, remote testing using the app called ‘Participate’. It was nice because the participants could do the test whenever it was suitable for them. After recording the feedback, I divided it into observations, positive
-            quotes,
-            negative quotes and errors. To put everything into perspective, I conducted another an affinity mapping study, Here’s what it looked like.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/affinity-mapping-usability-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/affinity-mapping-usability-1200.png" alt="Affinity Mapping">
-          </picture>
-          <h3>Key Insights</h3>
-          <ul>
-            <li>People were satisfied with the functionality</li>
-            <li>The body text was too small, so I enlarged it</li>
-            <li>There was no way to check the appointments, so I made a brand new appointments screens</li>
-          </ul>
-          <p>
-            Some of the feedback was too specific and would require a lot of context. Therefore, I won’t get into nitty-gritty here.
-          </p>
-        </div>
-        <!--end usability testing-->
-
-        <div class="white">
-          <!--start refining the design section-->
-          <h2>Refining the Design</h2>
-          <p>
-            Now we come to the part where I made all the visual design decisions. I established a color palette for the design. I wanted to use yellow with a minimalistic touch to the website. It didn’t stop just there, I also established a design
-            language system, establishing some guidelines that would drive my design decisions. Here’s what it looked like.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/section-5/typography-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/section-5/typography-1200.png" alt="Typography and colors">
-          </picture>
-          <picture>
-            <source srcset="img/hopeful/section-5/ui-elements-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/section-5/ui-elements-1200.png" alt="UI elements">
-          </picture>
-          <picture>
-            <source srcset="img/hopeful/section-5/illustrations-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/section-5/illustrations-1200.png" alt="Illustrations">
-          </picture>
-          <picture>
-            <source srcset="img/hopeful/section-5/icons-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/section-5/icons-1200.png" alt="Icons">
-          </picture>
-        </div>
-        <!--end refining the design section-->
-
-        <div class="white">
-          <!--start end to end design section-->
-          <h2>End-to-End Design</h2>
-          <picture>
-            <source srcset="img/hopeful/poster-white-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/poster-white-1200.png" alt="Poster">
-          </picture>
-          <h2>Landing Page</h2>
-          <p>
-            The landing page welcomes the users and has a warm welcoming tone with a CTA suggesting users to register to the platform. In addition to that, featured therapists are located just below and that is the main feature of the website.
-            Sleepcasts section follows afterwards which provides the users a nice function of utility.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/landing-page-desktop-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/landing-page-desktop-1200.png" alt="Desktop landing page">
-          </picture>
-          <picture>
-            <source srcset="img/hopeful/mobile-landing-page-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/mobile-landing-page-1200.png" alt="Mobile landing page">
-          </picture>
-          <h4>Booking an appointment</h4>
-          <p>
-            Here’s the flow for booking an appointment for a therapist. I focused on simplicity. There’s many filters the users can choose from depending on their situation. The therapist profile has all the information that is needed for the users.
-            Users can pay using Paypal or a credit card.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/mobile-booking-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/mobile-booking-1200.png" alt="Mobile Booking">
-          </picture>
-          <h3>Desktop Screens</h3>
-          <p>
-            Desktop screens for a booking time and therapist’s profile. Notice that the functionality remains the same across different platforms regardless of the size of the screen.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/desktop-booking-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/desktop-booking-1200.png" alt="Desktop Screens">
-          </picture>
-          <h3>Listening to a Sleepcats</h3>
-          <p>
-            Here’s the flow for listening to a Sleepcast. It is fairly simple. The users can access Sleepcasts through the Hamburger Menu.
-          </p>
-          <picture>
-            <source srcset="img/hopeful/mobile-sleepcasts-600.png" media="(max-width:767px)">
-            <img src="img/hopeful/mobile-sleepcasts-1200.png" alt="Mobile Sleepcasts">
-          </picture>
-        </div>
-        <!--end end to end design section-->
-
-        <div class="retrospect">
-          <!--start retrospect section-->
-          <h2>Retrospect</h2>
-          <h3>What went well?</h3>
-          <p>
-            I think the execution of this project went very well. I am satisfied with the design. I moved at a slow pace which allowed me to cover all the aspects of the design thinking process. From the initial phase, all the way down to the final
-            product. My workflow touched on all the important aspects of what makes a great product. I’ve always put the users at the center of my attention. That’s why I conducted interviews, feedback sessions, personas and user journeys through the
-            entirety of the project.
-          </p>
-          <h3>What didn't go well?</h3>
-          <p>
-            My mentor pointed out a few things that I could have done differently during the usability testing phase. He mentioned that some of my questions were generic and how I could improve them. I took the feedback very seriously as asking the
-            right questions is a very important aspect of the user research process. Furthermore, while designing the wireframes, I made some errors which my mentor pointed out as well with the layout and spacing. This was a great turning point as it
-            allowed to think and reflect on my mistakes and eventually made me a better designer. It also made me capable of making better design choices providing efficient user-centric solutions.
-          </p>
-          <h3>What could be better?</h3>
-          <p>
-            Usability testing and the questions I ask during the usability testing. Crafting a test plan and script is a very under rated skill for the UX process. While it may be overlooked by some designers, it is important to note that it can
-            definitely have an impact on a project as it pertains to usability. For instance, I could ask the participant to check what time is their appointment. This allows me to see whether getting to the appointments is simple enough and if the
-            users have enough information to operate.
-          </p>
-        </div>
-        <!--end retrospect section-->
-
+        <!--start hero image section-->
+        <h1>Hopeful</h1>
+        <picture>
+          <source srcset="img/hopeful/banner-mobile.png" media="(max-width:767px)">
+          <img src="img/hopeful/banner-desktop.png" alt="Hopeful image">
+        </picture>
+        <p>
+          We’ve all been there! Depressed, sad, heartbroken or lonely. Such is life sometimes. However, in every crisis lies an opportunity. An opportunity for growth. An opportunity to learn. An opportunity to forgive and an opportunity to be
+          hopeful.
+        </p>
+        <picture>
+          <source srcset="img/hopeful/mockup-white-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/mockup-white-1200.png" alt="Hopeful mockup">
+        </picture>
       </div>
-      <!--end main container-->
     </div>
-    <!--end main section-->
-  </main>
+    <!--end hero image section-->
 
+    <div class="white">
+      <div class="container">
+        <!--start the overview section-->
+        <h2>Overview</h2>
+        <p>
+          Hopeful is a responsive website that helps people suffering from depression, anxiety, sadness, loneliness or any other issue by connecting them to a therapist of their choosing.
+        </p>
+        <h2>Workflow</h2>
+        <picture>
+          <source srcset="img/hopeful/workflow-mobile-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/workflow-desktop-1200.png" alt="Hopeful workflow">
+        </picture>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+        <!--start defining the problem section-->
+        <h2>1. Defining the Problem</h2>
+        <p>
+          The initial part of my workflow is always about defining the problem. This includes possible problems and possible solutions to those problems. I then describe the concept and formulate a problem statement and using all the insights
+          gathered I craft a solution statement.
+        </p>
+        <h2>The Concept</h2>
+        <ul>
+          <li>There aren’t that many platforms out there that connect people suffering from mental health issues to professionals</li>
+          <li>Some of the platforms focus more on meditation than therapy</li>
+          <li>The platforms that do provide mental health support don’t provide any free content to the users</li>
+          <li>Users lose motivation easily since meditation is hard practice</li>
+          <li>People are fearful of being judged by their friends and family if they reach out for help</li>
+        </ul>
+        <h2>Problem Statement</h2>
+        <p>
+          Our users need to find a way to get access to licensed professional help because apps nowadays lack human element to them that doesn’t tackle the problem from the core. We will know this to be true when we see users downloading and
+          sticking
+          to our products using analytics and the number of sessions sold.
+        </p>
+        <h2>Solution Statement</h2>
+        <p>
+          A responsive website that lets people book online sessions with a therapist or a relevant professional of their liking. Users can schedule and pay for their session online. In addition to that, the website will offer free content such as
+          Sleepcasts. These not only provide free content but also facilitate users to sleep better and bring their anxiety levels down.
+        </p>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+        <h2>Competitor Analysis</h2>
+        <p>
+          The two competitors I chose for the analysis were Headspace and Present. Both these apps are meditation based and the insights I gathered from this analysis are as follows.
+        </p>
+        <h3>Key Insights</h3>
+        <ul>
+          <li>Users lack human connection while interacting with digital products</li>
+          <li>Users don’t want to commit to a monthly subscription plan</li>
+          <li>Headspace provides users with free content that engages them</li>
+          <li>Present has a pricey plan at 40€ per month and will not engage users</li>
+          <li>Present uses gamification to retain users</li>
+          <li>Opportunity lies in creating a platform where the users can connect with real psychologists to cope with anxiety</li>
+        </ul>
+        <p>
+          <a class="analysis" href="https://docs.google.com/document/d/1w0f2qAPdp2UrXHJigd9qGex5JUyiimPnugT50Wgd31I/edit?usp=sharing">Link to the full prototype.</a>
+        </p>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+        <!--start understanding the user section-->
+        <h2>2. Understanding the User</h2>
+        <p>
+          I started out with preparing a test script and plan for my interviews. I picked out 3 people who have been to therapy or have used a meditation app to interview. The interviews were mostly about people’s motivations, experiences and
+          frustrations with the current platform they are using. Following that I did affinity mapping to put everything into perspective. Here’s a picture to showcase my findings.
+        </p>
+        <h3>Affinity Mapping</h3>
+        <picture>
+          <source srcset="img/hopeful/affinity-mapping-600.jpg" media="(max-width:767px)">
+          <img src="img/hopeful/affinity-mapping-1200.jpg" alt="Affinity mapping">
+        </picture>
+        <h3>Findings</h3>
+        <ul>
+          <li>People are having difficulties with slow processing times using governmental institutions</li>
+          <li>Prices are very high for private institutes</li>
+          <li>Location seems to be a big issue as people don’t want to travel far</li>
+          <li>People have to go through an assessment phase to actually get to talk to a therapist</li>
+          <li>Digital platforms are not primary means of reaching out for help (in Finland)</li>
+          <li>Websites have discoverability issues</li>
+          <li>Free consultation is available in order to get a feel for the therapist</li>
+        </ul>
+        <h3>Way Forward</h3>
+        <p>
+          Based on the insights gathered from the people I interviewed, there is definitely a potential for a digital platform that would facilitate people in consulting a therapist for whatever issue they might encounter. The price seems to be
+          another issue that people take into consideration. If we can offer people simple yet affordable means of getting therapy then from the looks of it, people would gladly use the product.
+        </p>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+        <h2>User Personas</h2>
+        <p>
+          It’s time to introduce the personas, meet Carla and Jodie. They are both at a different stage in their lives which translates into different motivations, goals, frustrations and needs.
+        </p>
+        <div class="row">
+          <!--start row for user personas-->
+          <div>
+            <!--start column for 1st persona-->
+            <picture>
+              <source srcset="img/hopeful/carla-persona-600.png" media="(max-width:767px)">
+              <img src="img/hopeful/carla-persona-1200.png" alt="Carla's persona">
+            </picture>
+          </div>
+          <!--end column for 1st persona-->
+          <div>
+            <!--start column for 2nd persona-->
+            <picture>
+              <source srcset="img/hopeful/jodie-persona-600.png" media="(max-width:767px)">
+              <img src="img/hopeful/jodie-persona-1200.png" alt="Carla's persona">
+            </picture>
+          </div>
+          <!--end column for 2nd persona-->
+        </div>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+    <h2>User Journeys</h2>
+    <p>
+      I designed user journeys based on my findings and observations from the personas. These take us through the entire process of what a user does and feels while interacting with the product.
+    </p>
+    <div class="row">
+      <!--start row for user journeys-->
+      <div>
+        <!--start column for 1st journey-->
+        <picture>
+          <source srcset="img/hopeful/user-journey-carla-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/user-journey-carla-1200.png" alt="Carla's journey">
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source srcset="img/hopeful/user-journey-jodie-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/user-journey-jodie-1200.png" alt="Carla's journey">
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="white">
+  <div class="container">
+    <!--end row for user journeys-->
+    <h2>User Stories and Flows</h2>
+    <p>
+      Following user journeys I made user stories and flows. These were based on the most important aspects on the app, such as;
+    </p>
+    <ul>
+      <li>Booking an appointment with a therapist</li>
+      <li>Listening to a Sleepcast</li>
+    </ul>
+    <div class="row">
+      <!--start row for user stories and flows-->
+      <div>
+        <!--start column for 1st story and flow-->
+        <picture>
+          <source srcset="img/hopeful/user-flow-carla-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/user-flow-carla-1200.png" alt="Carla's story and flow">
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source srcset="img/hopeful/user-flow-jodie-600.png" media="(max-width:767px)">
+          <img src="img/hopeful/user-flow-jodie-1200.png" alt="Jodie's story and flow">
+        </picture>
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="white">
+      <div class="container">
+      <!--start foundational design section-->
+      <h2>3. Foundational Design</h2>
+      <p>
+        It was time to get my creative juices flowing by designing some low fidelity wireframes. I also decided to create paper prototypes by annotating the wireframes.
+      </p>
+      <h2>Low Fidelity Wireframes</h2>
+      <h3>Booking a session</h3>
+      <p>
+        Here we can how a user might book a session with a therapist using low fidelity wireframes for mobile.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/lofi-mobile-booking-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/lofi-mobile-booking-1200.png" alt="Low fidelity wireframe for booking">
+      </picture>
+      <h3>Listening to a Sleepcast</h3>
+      <p>
+        Users can also listen to Sleepcasts free of charge. It serves as a nice function of utility.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/lofi-mobile-sleepcasts-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/lofi-mobile-sleepcasts-1200.png" alt="Low fidelity wireframe for sleepcasts">
+      </picture>
+    </div>
+  </div>
+  <div class="white">
+    <div class="container">
+      <h2>Mid Fidelity Wireframes</h2>
+      <p>
+        Now it was time to go to my favorite design tool, Sketch, to design mid fidelity wireframes for booking a session with a therapist and listen to sleepcasts.
+      </p>
+      <h3>Booking a Session</h3>
+      <p>
+        Here's the flow for booking a session with a therapist. I used Sketch to lay down the foundation for my final screens.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/midfi-mobile-booking-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/midfi-mobile-booking-1200.png" alt="Mid fidelity wireframe for booking">
+      </picture>
+      <h3>Listening to Sleepcasts</h3>
+      <p>Subsequently, I designed the flow for listening to a Sleepcast as well
+      </p>
+      <picture>
+        <source srcset="img/hopeful/midfi-mobile-sleepcasts-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/midfi-mobile-sleepcasts-1200.png" alt="Mid fidelity wireframe for sleepcasts">
+      </picture>
+    </div>
+  </div>
+    <div class="white">
+     <div class="container">
+      <h2>4.Usability Testing</h2>
+      <p>
+        I figured my wireframes were detailed enough to conduct usability testing. So I booked time slots with 6 different people. The tests were based on the following parameters;
+      </p>
+      <ul>
+        <li>Booking an appointment with a therapist</li>
+        <li>Listening to a Sleepcast</li>
+      </ul>
+      <p>
+        I used unmoderated, remote testing using the app called ‘Participate’. It was nice because the participants could do the test whenever it was suitable for them. After recording the feedback, I divided it into observations, positive
+        quotes,
+        negative quotes and errors. To put everything into perspective, I conducted another an affinity mapping study, Here’s what it looked like.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/affinity-mapping-usability-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/affinity-mapping-usability-1200.png" alt="Affinity Mapping">
+      </picture>
+      <h3>Key Insights</h3>
+      <ul>
+        <li>People were satisfied with the functionality</li>
+        <li>The body text was too small, so I enlarged it</li>
+        <li>There was no way to check the appointments, so I made a brand new appointments screens</li>
+      </ul>
+      <p>
+        Some of the feedback was too specific and would require a lot of context. Therefore, I won’t get into nitty-gritty here.
+      </p>
+    </div>
+  </div>
+    <div class="white">
+      <div class="container">
+      <!--start refining the design section-->
+      <h2>Refining the Design</h2>
+      <p>
+        Now we come to the part where I made all the visual design decisions. I established a color palette for the design. I wanted to use yellow with a minimalistic touch to the website. It didn’t stop just there, I also established a design
+        language system, establishing some guidelines that would drive my design decisions. Here’s what it looked like.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/section-5/typography-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/section-5/typography-1200.png" alt="Typography and colors">
+      </picture>
+      <picture>
+        <source srcset="img/hopeful/section-5/ui-elements-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/section-5/ui-elements-1200.png" alt="UI elements">
+      </picture>
+      <picture>
+        <source srcset="img/hopeful/section-5/illustrations-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/section-5/illustrations-1200.png" alt="Illustrations">
+      </picture>
+      <picture>
+        <source srcset="img/hopeful/section-5/icons-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/section-5/icons-1200.png" alt="Icons">
+      </picture>
+    </div>
+  </div>
+    <div class="white">
+      <div class="container">
+      <h2>End-to-End Design</h2>
+      <picture>
+        <source srcset="img/hopeful/poster-white-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/poster-white-1200.png" alt="Poster">
+      </picture>
+      <h2>Landing Page</h2>
+      <p>
+        The landing page welcomes the users and has a warm welcoming tone with a CTA suggesting users to register to the platform. In addition to that, featured therapists are located just below and that is the main feature of the website.
+        Sleepcasts section follows afterwards which provides the users a nice function of utility.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/landing-page-desktop-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/landing-page-desktop-1200.png" alt="Desktop landing page">
+      </picture>
+      <picture>
+        <source srcset="img/hopeful/mobile-landing-page-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/mobile-landing-page-1200.png" alt="Mobile landing page">
+      </picture>
+      <h4>Booking an appointment</h4>
+      <p>
+        Here’s the flow for booking an appointment for a therapist. I focused on simplicity. There’s many filters the users can choose from depending on their situation. The therapist profile has all the information that is needed for the users.
+        Users can pay using Paypal or a credit card.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/mobile-booking-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/mobile-booking-1200.png" alt="Mobile Booking">
+      </picture>
+      <h3>Desktop Screens</h3>
+      <p>
+        Desktop screens for a booking time and therapist’s profile. Notice that the functionality remains the same across different platforms regardless of the size of the screen.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/desktop-booking-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/desktop-booking-1200.png" alt="Desktop Screens">
+      </picture>
+      <h3>Listening to a Sleepcats</h3>
+      <p>
+        Here’s the flow for listening to a Sleepcast. It is fairly simple. The users can access Sleepcasts through the Hamburger Menu.
+      </p>
+      <picture>
+        <source srcset="img/hopeful/mobile-sleepcasts-600.png" media="(max-width:767px)">
+        <img src="img/hopeful/mobile-sleepcasts-1200.png" alt="Mobile Sleepcasts">
+      </picture>
+    </div>
+  </div>ß
+    <!--end end to end design section-->
+
+    <div class="retrospect grey">
+      <div class="container">
+      <!--start retrospect section-->
+      <h2>Retrospect</h2>
+      <h3>What went well?</h3>
+      <p>
+        I think the execution of this project went very well. I am satisfied with the design. I moved at a slow pace which allowed me to cover all the aspects of the design thinking process. From the initial phase, all the way down to the final
+        product. My workflow touched on all the important aspects of what makes a great product. I’ve always put the users at the center of my attention. That’s why I conducted interviews, feedback sessions, personas and user journeys through the
+        entirety of the project.
+      </p>
+      <h3>What didn't go well?</h3>
+      <p>
+        My mentor pointed out a few things that I could have done differently during the usability testing phase. He mentioned that some of my questions were generic and how I could improve them. I took the feedback very seriously as asking the
+        right questions is a very important aspect of the user research process. Furthermore, while designing the wireframes, I made some errors which my mentor pointed out as well with the layout and spacing. This was a great turning point as it
+        allowed to think and reflect on my mistakes and eventually made me a better designer. It also made me capable of making better design choices providing efficient user-centric solutions.
+      </p>
+      <h3>What could be better?</h3>
+      <p>
+        Usability testing and the questions I ask during the usability testing. Crafting a test plan and script is a very under rated skill for the UX process. While it may be overlooked by some designers, it is important to note that it can
+        definitely have an impact on a project as it pertains to usability. For instance, I could ask the participant to check what time is their appointment. This allows me to see whether getting to the appointments is simple enough and if the
+        users have enough information to operate.
+      </p>
+    </div>
+  </div>
+  </main>
   <footer id="contact">
     <div class="container">
       <!--start the container for the footer-->
@@ -430,7 +438,7 @@
       <!--end social media section-->
       <div class="copyright">
         <!--open opyright section-->
-          <a href="index.html" class="logo">Kazi Athar</a>
+        <a href="index.html" class="logo">Kazi Athar</a>
         <p>Copyright Kazi Athar 2020</p>
       </div>
       <!--end of copyright-->

@@ -1,21 +1,21 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-body  {
-/*
+body {
+  /*
 Colors used:
 Primary Color (Crimson):#F67762;
 Secondary Color (Teal):#00CD91;
 Background Color (Purple): #2F2F43;
 Background Color (Grey): #F7F8FA;
 */
-background-color: #FFFFFF;
-font-family: 'Avenir Next', sans-serif;
-font-size: 16px;
-font-weight: 300;
-line-height: 1.6;
-color: #4a4a4a;
+  background-color: #FFFFFF;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
@@ -29,7 +29,7 @@ h1 {
 
 h2 {
   font-size: 1.75em;
-  font-weight:700;
+  font-weight: 700;
 }
 
 h3 {
@@ -50,19 +50,35 @@ p {
 img {
   width: 100%;
 }
-.img-position{
-  width:100%;
+
+.img-position {
+  width: 100%;
   max-height: 300px;
   max-width: 300px;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
 a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: underline;
 }
 
 a:visited {
-   color: #FFFFFF;
+  color: #fff;
 }
 
 a:hover, a:focus {
@@ -71,59 +87,86 @@ a:hover, a:focus {
 }
 
 a:active {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: none;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul >li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
+nav>ul>li>a {
   margin: 0 15px;
   font-weight: 400;
   text-decoration: none;
+  color: #ffffff !important;
 }
 
-nav > ul > li > a:hover{
-   color: #ffffff;
-   border-bottom: 3px solid #00CD91;
+nav>ul>li>a:visited {
+  color: #ffffff;
 }
 
-nav a.active{
-    color: #ffffff;
-    border-bottom: 3px solid #00CD91;
+nav>ul>li>a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #00CD91;
 }
 
-nav > ul > li > a:active {
-     color: #ffffff;
+nav a.active {
+  color: #ffffff;
+  border-bottom: 3px solid #00CD91;
 }
 
-.button.contact{
+nav>ul>li>a:active {
+  color: #ffffff;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+/*
+.hopeful .analysis a, a:visited {
+  color: #424242;
+  text-decoration: underline;
+}
+
+.hopeful .analysis a:hover, a:focus {
+  color: #00CD91;
+  text-decoration: underline;
+}
+
+*/
+
+.button.contact {
   background-color: transparent;
   color: #ffffff !important;
   border: 2px solid #F67762;
 }
 
-.button.contact:hover{
+.button.contact:hover {
   color: #ffffff !important;
   background-color: #F67762;
 }
 
-.button{
+.button {
   display: inline-block;
   border: 2px solid #F67762;
-  color: #424242 !important;/* needed to override the default link color */
+  color: #424242 !important;
   font-weight: 400;
   padding: 10px;
   transition: 0.2s opacity;
@@ -136,7 +179,7 @@ nav > ul > li > a:active {
   color: white !important;
 }
 
-.button-hero{
+.button-hero {
   display: inline-block;
   margin-top: 25px;
   background-color: transparent;
@@ -147,7 +190,7 @@ nav > ul > li > a:active {
   text-decoration: none;
 }
 
-.button-hero:hover{
+.button-hero:hover {
   color: #ffffff;
   background-color: #F67762;
   text-decoration: none;
@@ -157,49 +200,50 @@ header {
   background-color: #2F2F43;
   padding: 10px 0;
   margin: 0;
-  text-align: center;
   -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
-  box-shadow:0px 6px 15px 0px rgba(50, 50, 50, 0.55);
+  box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
   position: fixed;
   display: inline-block;
   width: 100%;
 }
 
-.container{
-    padding: 0 25px;
+.container {
+  padding: 0 25px;
 }
 
-.row{
+.row {
   padding: 0 0 45px;
 }
 
-.row2 .col-6{
+.row2 .col-6 {
   margin: 0 auto;
   float: none;
 }
 
-#work .col-6{
+#work .col-6 {
   margin-bottom: 3em;
 }
 
-#hero h1{
-  text-align: center; /* centers text */
+#hero h1 {
+  text-align: center;
+  /* centers text */
   color: #FFFFFF;
   line-height: 1.8;
 }
 
-#hero span.color{
+#hero span.color {
   color: #00CD91;
   display: unset;
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   text-decoration: none;
+  margin-left: 15px;
 }
 
 #hero {
@@ -211,40 +255,55 @@ header {
   padding: 75px 0;
 }
 
-#hero span{
+#hero span {
   display: block;
 }
 
 main {
-  padding-top: 108px;
+  padding-top: 51px;
 }
 
-.social-media ul{
+.social-media ul {
   list-style-type: none;
   padding: 0;
   display: inline-block;
 }
 
-.social-media li{
+.social-media li {
   float: left;
   margin: 10px 20px;
 }
 
-.no-padding-bottom{
+.no-padding-bottom {
   padding-bottom: 0;
 }
 
 #about-page h1 {
   padding-top: 10px;
-  display:none;
+  display: none;
+}
+
+.about-list {
+  padding: 0;
+  list-style-position: inside;
 }
 
 .center {
   text-align: center;
 }
 
-.center picture img{
+.center picture img {
   padding: 70px;
+}
+
+.white {
+  background-color: #fff;
+  padding: 30px 0;
+}
+
+.grey {
+  background-color: #F7F8FA;
+  padding: 30px 0;
 }
 
 footer {
@@ -261,41 +320,75 @@ footer {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
-.sun{
+.sun {
   animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
-.cloud-front{
+.cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px, 48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-.cloud-back{
+.cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ================================
 Medium devices (640px and larger)
 =================================== */
-
 @media only screen and (min-width:640px) {
   header {
     text-align: unset;
     padding: 20px 25px;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+  nav>ul>li {
+    display: inline-block;
+    margin: 1em 0;
+  }
+
+  .logo {
+    min-width: 250px;
   }
 
   nav {
@@ -308,27 +401,27 @@ Medium devices (640px and larger)
     padding-top: 72px;
   }
 
-  .container{
-    max-width: 1200px;
+  .container {
+    max-width: 1000px;
     margin: 0 auto;
   }
 
-  header .container:after{
+  header .container:after {
     content: "";
     clear: both;
     display: table;
   }
 
-  nav ul{
+  nav ul {
     margin: 0;
   }
 
-  [class*="col-"]{
-    padding: 15px 40px;
+  [class*="col-"] {
+    padding: 15px 38px;
     float: left;
   }
 
-  .row::after{
+  .row::after {
     content: "";
     clear: both;
     display: table;
@@ -338,69 +431,78 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  #hero {
-      padding: 140px 0;
-  }
-
-  #work h2{
-    margin-left: 40px;
-  }
-
-  .relevant-skills{
+  #about-page .col-6 {
     padding-left: 0;
   }
 
-  .hopeful-text-style p{
-    margin: 2em auto;
-    max-width: 538px;
-    padding: 10px 20px;
+  .about .bullets {
+    padding: 15px 3px;
+  }
+
+  #hero {
+    padding: 140px 0;
+  }
+
+  #work h2 {
+    margin-left: 40px;
+  }
+
+  .relevant-skills {
+    padding-left: 0;
+  }
+
+  .hopeful p, .intro .white, .hopeful ul {
+    padding-bottom: 2em;
+    padding-top: 1em;
+    margin: auto;
+    max-width: 750px;
+  }
+
+  .hopeful h2, .hopeful h3{
+    margin: 1em auto;
+    max-width: 750px;
+
+  }
+
+  .hopeful img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
   }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-
 #work {
   padding-top: 60px;
 }
 
 @media only screen and (min-width: 1024px) {
-  .col-6{
+  .col-6 {
     width: 50%;
   }
 
-  .intro p{
+  .intro p {
     margin: 7em auto;
-    max-width: 538px;
-
+    max-width: 750px;
   }
 
-  .row-max-width{
+  .row-max-width {
     width: 100%;
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
   }
-
-  .hopeful-text-style p{
-    margin: 2em auto;
-    max-width: 850px;
-    padding: 10px 20px;
-  }
-
-  #about-page col-6 relevant-skills ul{
-    padding: 0 0 0 18px;
-  }
-
 }
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-
 @media only screen and (min-width: 1440px) {
-  .container{
+  .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
-
 }
