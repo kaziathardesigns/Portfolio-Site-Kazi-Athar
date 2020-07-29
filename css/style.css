@@ -10,7 +10,7 @@ Secondary Color (Teal):#00CD91;
 Background Color (Purple): #2F2F43;
 Background Color (Grey): #F7F8FA;
 */
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-family: 'Avenir Next', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -18,12 +18,15 @@ Background Color (Grey): #F7F8FA;
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 1.50em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -61,7 +64,8 @@ img {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -73,7 +77,7 @@ img {
 }
 
 a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -81,8 +85,9 @@ a:visited {
   color: #fff;
 }
 
-a:hover, a:focus {
-  color: #00CD91;
+a:hover,
+a:focus {
+  color: #00cd91;
   text-decoration: none;
 }
 
@@ -91,51 +96,48 @@ a:active {
   text-decoration: none;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   margin: 0 15px;
   font-weight: 400;
   text-decoration: none;
-  color: #ffffff !important;
+  color: #fff !important;
 }
 
-nav>ul>li>a:visited {
-  color: #ffffff;
+nav > ul > li > a:visited {
+  color: #fff;
 }
 
-nav>ul>li>a:hover {
-  color: #ffffff;
-  border-bottom: 3px solid #00CD91;
+nav > ul > li > a:hover {
+  color: #fff;
+  border-bottom: 3px solid #00cd91;
 }
 
 nav a.active {
-  color: #ffffff;
-  border-bottom: 3px solid #00CD91;
+  color: #fff;
+  border-bottom: 3px solid #00cd91;
 }
 
-nav>ul>li>a:active {
-  color: #ffffff;
-}
-
-.navtoggle.responsive li  {
-  display: block;
+nav > ul > li > a:active {
+  color: #fff;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -154,18 +156,18 @@ nav>ul>li>a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #ffffff !important;
-  border: 2px solid #F67762;
+  color: #fff !important;
+  border: 2px solid #f67762;
 }
 
 .button.contact:hover {
-  color: #ffffff !important;
-  background-color: #F67762;
+  color: #353535 !important;
+  background-color: #f67762;
 }
 
 .button {
   display: inline-block;
-  border: 2px solid #F67762;
+  border: 2px solid #f67762;
   color: #424242 !important;
   font-weight: 400;
   padding: 10px;
@@ -175,29 +177,29 @@ nav>ul>li>a:active {
 
 .button:hover {
   text-decoration: none;
-  background-color: #F67762;
-  color: white !important;
+  background-color: #f67762;
+  color: #353535 !important;
 }
 
 .button-hero {
   display: inline-block;
   margin-top: 25px;
   background-color: transparent;
-  color: #ffffff;
-  border: 2px solid #F67762;
+  color: #fff;
+  border: 2px solid #f67762;
   padding: 10px;
   font-weight: 400;
   text-decoration: none;
 }
 
 .button-hero:hover {
-  color: #ffffff;
-  background-color: #F67762;
+  color: #353535;
+  background-color: #f67762;
   text-decoration: none;
 }
 
 header {
-  background-color: #2F2F43;
+  background-color: #2f2f43;
   padding: 10px 0;
   margin: 0;
   -webkit-box-shadow: 0px 6px 15px 0px rgba(50, 50, 50, 0.55);
@@ -226,14 +228,13 @@ header {
 }
 
 #hero h1 {
-  text-align: center;
-  /* centers text */
-  color: #FFFFFF;
+  text-align: center;  /* centers text */
+  color: #fff;
   line-height: 1.8;
 }
 
 #hero span.color {
-  color: #00CD91;
+  color: #00cd91;
   display: unset;
 }
 
@@ -247,7 +248,7 @@ header {
 }
 
 #hero {
-  background-color: #2F2F43;
+  background-color: #2f2f43;
   margin: 0;
   display: inline-block;
   width: 100%;
@@ -302,13 +303,13 @@ main {
 }
 
 .grey {
-  background-color: #F7F8FA;
+  background-color: #f7f8fa;
   padding: 30px 0;
 }
 
 footer {
   text-align: center;
-  background-color: #2F2F43;
+  background-color: #2f2f43;
   padding: 20px;
   color: white;
 }
@@ -368,27 +369,28 @@ footer {
 /* ================================
 Medium devices (640px and larger)
 =================================== */
-@media only screen and (min-width:640px) {
+@media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 25px;
+    padding: 28px 55px;
   }
 
-  .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) { display: inline-block; }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
-    margin: 1em 0;
   }
 
   .logo {
     min-width: 250px;
+  }
+
+  .navtoggle .logo {
+    padding-top: 10px;
   }
 
   nav {
@@ -406,7 +408,7 @@ Medium devices (640px and larger)
     margin: 0 auto;
   }
 
-  header .container:after {
+  header .container::after {
     content: "";
     clear: both;
     display: table;
@@ -451,17 +453,17 @@ Medium devices (640px and larger)
     padding-left: 0;
   }
 
-  .hopeful p, .intro .white, .hopeful ul {
-    padding-bottom: 2em;
-    padding-top: 1em;
+  .hopeful p,
+  .intro .white,
+  .hopeful ul {
     margin: auto;
     max-width: 750px;
   }
 
-  .hopeful h2, .hopeful h3{
+  .hopeful h2,
+  .hopeful h3 {
     margin: 1em auto;
     max-width: 750px;
-
   }
 
   .hopeful img {
@@ -499,10 +501,3 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
