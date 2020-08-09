@@ -381,8 +381,13 @@ Medium devices (640px and larger)
     display: none;
   }
 
+<<<<<<< HEAD
   .navtoggle.responsive li {
     display: block;
+=======
+  .navtoggle.responsive nav {
+    padding: 0;
+>>>>>>> gh-pages
   }
 
   nav > ul > li {
