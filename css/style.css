@@ -248,12 +248,15 @@ header {
 }
 
 #hero {
-  background-image: url(../img/background-color.png);
+  background-image: url(../img/background-color.svg);
   margin: 0;
   display: inline-block;
   width: 100%;
   text-align: center;
   padding: 75px 0;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
 }
 
 #hero span {
