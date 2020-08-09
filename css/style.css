@@ -248,7 +248,7 @@ header {
 }
 
 #hero {
-  background-color: #2f2f43;
+  background-image: url(../img/background-color.png);
   margin: 0;
   display: inline-block;
   width: 100%;
