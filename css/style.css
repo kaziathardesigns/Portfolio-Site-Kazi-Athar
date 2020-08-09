@@ -381,6 +381,10 @@ Medium devices (640px and larger)
     display: none;
   }
 
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
   nav > ul > li {
     display: inline-block;
   }
