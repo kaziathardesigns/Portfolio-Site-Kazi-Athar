@@ -290,6 +290,10 @@ main {
   display: none;
 }
 
+#project-1 h1 {
+  display: none;
+}
+
 .about-list {
   padding: 0;
   list-style-position: inside;
