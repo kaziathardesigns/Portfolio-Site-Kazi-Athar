@@ -479,6 +479,15 @@ Medium devices (640px and larger)
     margin-right: auto;
     width: 80%;
   }
+  
+  .navtoggle.responsive li {
+    padding: 0 !important;
+    border-top: none !important;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
 }
 
 /* ==============================
