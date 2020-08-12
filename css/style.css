@@ -395,11 +395,6 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
-  .navtoggle .responsive li {
-    padding: 0;
-    border-top: none;
-  }
-
   .logo {
     min-width: 250px;
   }
@@ -486,6 +481,15 @@ Medium devices (640px and larger)
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0 !important;
+    border-top: none !important;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
   }
 }
 
