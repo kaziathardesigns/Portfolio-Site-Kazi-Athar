@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   /*
 Colors used:
@@ -478,7 +482,11 @@ Medium devices (640px and larger)
     margin-right: auto;
     width: 80%;
   }
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> gh-pages
   .navtoggle.responsive li {
     padding: 0 !important;
     border-top: none !important;
